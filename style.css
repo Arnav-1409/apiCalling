@@ -1,0 +1,533 @@
+/* RESPONSIVE 375 */
+
+@media screen and (min-width: 375px){
+
+    * {
+        box-sizing: border-box;
+    }
+
+    img{
+        width:100%;
+    }
+    .main-container{
+        
+        background-color: lightgrey;
+        width:100%;
+    }
+    .container{
+        width:28%;
+        margin:0 auto;
+        display:block;
+    }
+    .search input[type=search]{
+        margin-left: 1px;
+        width: 300px;
+        border: 2px solid #ccc;
+        border-radius: 6px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url(searchicon.png);
+        background-position: 11px 11px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+    }
+    
+    .artists ul {
+        list-style-type: none;
+        }
+    
+    .artists_data ul {
+        list-style-type: none;
+    }
+    
+    .header img{
+        width:40px;
+        height: 40px;
+        float:left;
+        margin: 4px 2px;
+    }
+    
+    .header .search{
+        display:inline-block;
+        float:left;
+        margin: 4px 2px;
+    }
+    
+      .fa {
+        padding: 10px;
+        font-size: 10px;
+        width: 10px;
+        text-align: center;
+        text-decoration: none;
+        margin: 6px 15px;
+      }
+      
+      .fa-facebook {
+        background: #3B5998;
+        color: white;
+      }
+    
+      .artist-container {
+        width: 190%;
+        margin: 0 auto;
+        display: block;
+        float: left;
+    }
+    
+    .left-container {
+        margin-top: 10px;
+        float: left;
+        width: 50%;
+        padding: 100px;
+        background-repeat: no-repeat;
+    }
+    
+    .right-container {
+        margin-top: -129px;
+        float: left;
+        width: 100%;
+        padding: 48px;
+        background-repeat: no-repeat;
+    }
+    
+    .artists {
+        width: 290%;
+        background-color: white;
+        margin-bottom: 35px;
+        padding: 10px;
+        margin-left: -53px;
+        border: solid 1px lightgrey;
+    }
+    
+      .artists ul{
+          margin-top:5px;
+          margin-left:0px;
+          padding:10px;
+      }
+    
+      .artists_data {
+        display: inline-grid;
+        float:left;
+        grid-template-columns: 65% 35%;
+        background-color: white;
+        padding: 10px;
+        border-bottom: solid 0.5px lightgrey;
+      }
+    
+      .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0);
+        padding: 42px 13px;
+        font-size: 16px;
+        text-align: left;
+    }
+    
+      .grid-item :hover{
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0);
+        padding: 50px;
+        font-size: 20px;
+        text-align: left;
+      }
+    
+} 
+
+/* RESPONSIVE 768 */
+
+@media screen and (min-width: 768px){
+    * {
+        box-sizing: border-box;
+    }
+
+    img{
+        width:100%;
+    }
+    .main-container{
+        
+        background-color: lightgrey;
+        width:100%;
+    }
+    .container{
+        width:28%;
+        margin:0 auto;
+        display:block;
+    }
+    .search input[type=search]{
+        margin-left: -108px;
+        width: 300px;
+        border: 2px solid #ccc;
+        border-radius: 6px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url(searchicon.png);
+        background-position: 11px 11px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+    }
+    
+    .artists ul {
+        list-style-type: none;
+        }
+    
+    .artists_data ul {
+        list-style-type: none;
+    }
+    
+    .header img{
+        width:40px;
+        height: 40px;
+        float:left;
+        margin: 4px 2px;
+    }
+    
+    .header .search{
+        display:inline-block;
+        float:left;
+        margin: 4px 2px;
+    }
+    
+      .fa {
+        padding: 10px;
+        font-size: 10px;
+        width: 10px;
+        text-align: center;
+        text-decoration: none;
+        margin: 6px 15px;
+      }
+      
+      .fa-facebook {
+        background: #3B5998;
+        color: white;
+      }
+    
+      .artist-container {
+        width: 190%;
+        margin: 0 auto;
+        display: block;
+        float: left;
+    }
+    
+    .left-container {
+        margin-top: 10px;
+        float: left;
+        width: 50%;
+        padding: 100px;
+        background-repeat: no-repeat;
+    }
+    
+    .right-container {
+        margin-top: 107px;
+        float: left;
+        width: 42%;
+        padding: 0px;
+        background-repeat: no-repeat;
+        margin-left: -480px;
+    }
+    
+    .artists {
+        width: 35%;
+        background-color: white;
+        margin-bottom: 35px;
+        padding: 10px;
+        margin-left: -53px;
+        border: solid 1px lightgrey;
+    }
+    
+      .artists ul{
+          margin-top:5px;
+          margin-left:0px;
+          padding:10px;
+      }
+    
+      .artists_data {
+        display: inline-grid;
+        float:left;
+        grid-template-columns: 65% 35%;
+        background-color: white;
+        padding: 10px;
+        border-bottom: solid 0.5px lightgrey;
+      }
+    
+      .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0);
+        padding: 1px 75px;
+        font-size: 16px;
+        text-align: left;
+    }
+      .grid-item :hover{
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0);
+        padding: 50px;
+        font-size: 20px;
+        text-align: left;
+      }
+   }
+
+ /* RESPONSIVE 1024 */
+
+@media screen and (min-width: 1024px){
+
+    * {
+        box-sizing: border-box;
+    }
+
+    img{
+        width:100%;
+    }
+    .main-container{
+        
+        background-color: lightgrey;
+        width:100%;
+    }
+    .container{
+        width:28%;
+        margin:0 auto;
+        display:block;
+    }
+    .search input[type=search]{
+        margin-left: 50px;
+        width: 300px;
+        border: 2px solid #ccc;
+        border-radius: 6px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url(searchicon.png);
+        background-position: 11px 11px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+    }
+    
+    .artists ul {
+        list-style-type: none;
+        }
+    
+    .artists_data ul {
+        list-style-type: none;
+    }
+    
+    .header img{
+        width:40px;
+        height: 40px;
+        float:left;
+        margin: 4px 2px;
+    }
+    
+    .header .search{
+        display:inline-block;
+        float:left;
+        margin: 4px 2px;
+    }
+    
+      .fa {
+        padding: 10px;
+        font-size: 10px;
+        width: 10px;
+        text-align: center;
+        text-decoration: none;
+        margin: 6px 15px;
+      }
+      
+      .fa-facebook {
+        background: #3B5998;
+        color: white;
+      }
+    
+      .artist-container {
+        width: 190%;
+        margin: 0 auto;
+        display: block;
+        float: left;
+    }
+    
+    .left-container {
+        margin-top: 10px;
+        float: left;
+        width: 50%;
+        padding: 100px;
+        background-repeat: no-repeat;
+    }
+    
+    .right-container {
+        margin-top: 107px;
+        float: left;
+        width: 20%;
+        padding: 0px;
+        background-repeat: no-repeat;
+        margin-left: -480px;
+    }
+    
+    .artists {
+        width: 35%;
+        background-color: white;
+        margin-bottom: 35px;
+        padding: 10px;
+        margin-left: -53px;
+        border: solid 1px lightgrey;
+    }
+    
+      .artists ul{
+          margin-top:5px;
+          margin-left:0px;
+          padding:10px;
+      }
+    
+      .artists_data {
+        display: inline-grid;
+        float:left;
+        grid-template-columns: 65% 35%;
+        background-color: white;
+        padding: 10px;
+        border-bottom: solid 0.5px lightgrey;
+      }
+    
+      .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0);
+        padding: 1px 65px;
+        font-size: 16px;
+        text-align: left;
+    }
+    
+      .grid-item :hover{
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0);
+        padding: 50px;
+        font-size: 20px;
+        text-align: left;
+      }
+}
+
+ @media screen and (min-width: 1366px){
+    * {
+        box-sizing: border-box;
+    }
+
+    img{
+        width:100%;
+    }
+    .main-container{
+        
+        background-color: lightgrey;
+        width:100%;
+    }
+    .container{
+        width:28%;
+        margin:0 auto;
+        display:block;
+    }
+    .search input[type=search]{
+        margin-left: 50px;
+        width: 300px;
+        border: 2px solid #ccc;
+        border-radius: 6px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url(searchicon.png);
+        background-position: 11px 11px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+    }
+    
+    .artists ul {
+        list-style-type: none;
+        }
+    
+    .artists_data ul {
+        list-style-type: none;
+    }
+    
+    .header img{
+        width:40px;
+        height: 40px;
+        float:left;
+        margin: 4px 2px;
+    }
+    
+    .header .search{
+        display:inline-block;
+        float:left;
+        margin: 4px 2px;
+    }
+    
+      .fa {
+        padding: 10px;
+        font-size: 10px;
+        width: 10px;
+        text-align: center;
+        text-decoration: none;
+        margin: 6px 15px;
+      }
+      
+      .fa-facebook {
+        background: #3B5998;
+        color: white;
+      }
+    
+      .artist-container {
+        width: 190%;
+        margin: 0 auto;
+        display: block;
+        float: left;
+    }
+    
+    .left-container {
+        margin-top: 10px;
+        float: left;
+        width: 50%;
+        padding: 100px;
+        background-repeat: no-repeat;
+    }
+    
+    .right-container {
+        margin-top: 107px;
+        float: left;
+        width: 10%;
+        padding: 0px;
+        background-repeat: no-repeat;
+        margin-left: -480px;
+    }
+    
+    .artists {
+        width: 35%;
+        background-color: white;
+        margin-bottom: 35px;
+        padding: 10px;
+        margin-left: -53px;
+        border: solid 1px lightgrey;
+    }
+    
+      .artists ul{
+          margin-top:5px;
+          margin-left:0px;
+          padding:10px;
+      }
+    
+      .artists_data {
+        display: inline-grid;
+        float:left;
+        grid-template-columns: 65% 35%;
+        background-color: white;
+        padding: 10px;
+        border-bottom: solid 0.5px lightgrey;
+      }
+    
+      .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0);
+        padding: 1px 65px;
+        font-size: 16px;
+        text-align: left;
+    }
+    
+      .grid-item :hover{
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0);
+        padding: 1px 65px;
+        font-size: 16px;
+        text-align: left;
+      }
+
+ }
+
+     
