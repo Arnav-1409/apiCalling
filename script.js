@@ -4,7 +4,7 @@ document.getElementById('search').addEventListener('keyup', loadArtists);
 function loadArtists() {
     var artists ={};
     var output ="";
-    var special = "/^[_A-z0-9]*((-|\s)*[_A-z0-9])*$/";
+    var special = "/[^a-zA-Z0-9]/";
     var art = document.getElementById('search').value;
     if (art == ""  || !special) {
         document.getElementById('search').value = "";
@@ -73,11 +73,13 @@ function loadArtistsData() {
         if (this.status == 200) {
              artists_D = JSON.parse(this.responseText);
             var out = '';
-            for (var i in artists_D) {
+            var pagination = artists_D.length;
+            pagination=artists_D.slice(0,3);
+            for (var i in pagination){
                 out +=
                     '<div class="artists_data">' +
-                    '<div class="grid-item">' + artists_D[i].venue.city + ' , ' + artists_D[i].venue.region + '</div>' +
-                    '<div class="grid-item">' + artists_D[i].venue.name + '</div>' +
+                    '<div class="grid-item">' + pagination[i].venue.city + ' , ' + pagination[i].venue.region + '</div>' +
+                    '<div class="grid-item">' + pagination[i].venue.name + '</div>' +
                     '</div>';
             }
             document.getElementById('events').innerHTML = out;
@@ -85,3 +87,13 @@ function loadArtistsData() {
     }
     xhr2.send();
 }
+
+// function showPage(id){
+//     var toatalNumberOfPages = 2;
+//     for(var i = 1; i <= toatalNumberOfPages; i++ ){
+//         if(document.getElementById('page'+i))
+//         document.getElementById('page'+i).style.display='none';
+//     }
+//     if(document.getElementById('page'+id))
+//     document.getElementById('page'+id).style.display='block';
+// };  
