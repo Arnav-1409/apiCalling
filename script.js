@@ -4,22 +4,28 @@ document.getElementById('search').addEventListener('keyup', loadArtists);
 function loadArtists() {
     var artists ={};
     var output ="";
-    var special = "^([a-zA-Z0-9_\s\-]*)$"
+    var special = "/^[_A-z0-9]*((-|\s)*[_A-z0-9])*$/";
     var art = document.getElementById('search').value;
-    if (art.trim() == ""  || !special) {
+    if (art == ""  || !special) {
         document.getElementById('search').value = "";
         artists =null;
         output = "";
-        
         document.getElementById('artists').innerHTML = output;
+        document.getElementById('artists').innerHTML = "search box empty";
     }
     else {
         // Spliting api url
-        var api = 'https://rest.bandsintown.com/artists/';
         art = document.getElementById('search').value;
         var key = '?app_id="510"';
-        var URL = api + art + key;
-        var xhr = new XMLHttpRequest();
+        var URL = 'https://rest.bandsintown.com/artists/'+art+key;
+        var xhr;
+        if(window.XMLHttpRequest){
+            
+         xhr = new XMLHttpRequest();
+        }
+        else{
+            xhr = new ActiveXObject("Microsoft.XMLHTTP");
+        }
         xhr.open('GET', URL, true);
         xhr.onload = function () {
             if (this.status == 200) {
@@ -47,7 +53,7 @@ function loadArtists() {
 //Load Artists data
 function loadArtistsData() {
     var artists_D={};
-    var out="";
+    var out=null;
     artists_D=null;
     document.getElementById('events').innerHTML = out;
     //spliting api url
@@ -55,7 +61,13 @@ function loadArtistsData() {
     var art2 = document.getElementById('search').value;
     var key2 = '/events?app_id="510"';
     var URL_EVENTS = api2 + art2 + key2;
-    var xhr2 = new XMLHttpRequest();
+    var xhr2;
+    if(window.XMLHttpRequest){
+        xhr2 = new XMLHttpRequest();
+       }
+       else{
+           xhr2 = new ActiveXObject("Microsoft.XMLHTTP");
+       }
     xhr2.open('GET', URL_EVENTS, true);
     xhr2.onload = function () {
         if (this.status == 200) {
